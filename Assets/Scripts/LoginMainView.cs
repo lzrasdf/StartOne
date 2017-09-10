@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LoginMainView : MonoBehaviour {
 
 	public GameObject[] obj;
-	GameObject Button_1;
-	GameObject Button_2;
-	GameObject Button_3;
-	GameObject Button_4;
-	GameObject Image;
+	GameObject btn_single;
+	GameObject btn_shop;
+	GameObject bg;
 
     void Awake()
     {
@@ -26,11 +25,9 @@ public class LoginMainView : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Button_1 = GameObject.Find("Button_1");
-		Button_2 = GameObject.Find("Button_2");
-		Button_3 = GameObject.Find("Button_3");
-		Button_4 = GameObject.Find("Button_4");
-		Image = GameObject.Find("Image");
+		btn_single = GameObject.Find("btn_single");
+		btn_shop = GameObject.Find("btn_shop");
+		bg = GameObject.Find("bg");
 
 		Awake();
 		DoSomeThing();
@@ -42,33 +39,21 @@ public class LoginMainView : MonoBehaviour {
 	}
 
 	void DoSomeThing () {
-		UIEventListener Lis_Btn_1 = Button_1.gameObject.AddComponent<UIEventListener>();  
-		UIEventListener Lis_Btn_2 = Button_2.gameObject.AddComponent<UIEventListener>();  
-		UIEventListener Lis_Btn_3 = Button_3.gameObject.AddComponent<UIEventListener>();  
-		UIEventListener Lis_Btn_4 = Button_4.gameObject.AddComponent<UIEventListener>();  
+		UIEventListener Lis_single = btn_single.gameObject.AddComponent<UIEventListener>();  
+		UIEventListener Lis_shop = btn_shop.gameObject.AddComponent<UIEventListener>();  
 
-		Lis_Btn_1.OnClick += delegate(GameObject gb)  
+		Lis_single.OnClick += delegate(GameObject gb)  
 		{  
-			double x = Image.transform.localPosition.x;
+			/*double x = Image.transform.localPosition.x;
 			double y = Image.transform.localPosition.y;
 			double z = Image.transform.localPosition.z;
 			Debug.Log(x); 
-			Debug.Log(y); 
-			//Image.transform.localposition = Vector3(x - 10, y, z); 
-			Image.GetComponent<Transform>().position = Vector3(x - 10, y, z);
+			Debug.Log(y); */
+			 Debug.Log("Single"); 
 		};
-		Lis_Btn_2.OnClick += delegate(GameObject gb)  
+		Lis_shop.OnClick += delegate(GameObject gb)  
 		{  
-			Debug.Log("2"); 
+			SceneManager.LoadScene("ShopMainView");
 		};
-		Lis_Btn_3.OnClick += delegate(GameObject gb)  
-		{  
-			Debug.Log("3"); 
-		};
-		Lis_Btn_4.OnClick += delegate(GameObject gb)  
-		{  
-			Debug.Log("4"); 
-		};
-
 	}
 }
