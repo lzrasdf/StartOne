@@ -25,3 +25,4 @@ public class camera : MonoBehaviour {
         m_Transform.transform.rotation = quate;
     }
 }
+

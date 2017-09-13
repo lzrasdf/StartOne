@@ -35,7 +35,7 @@ public class LoginMainView : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void DoSomeThing () {

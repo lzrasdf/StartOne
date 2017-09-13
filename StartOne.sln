@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{13D2CFFE-4287-C60B-BDD7-5103F005651F}") = "StartOne", "Assembly-CSharp.csproj", "{8989ADAC-078C-426A-8DC8-BEB8EB80507A}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartOne", "Assembly-CSharp.csproj", "{8989ADAC-078C-426A-8DC8-BEB8EB80507A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

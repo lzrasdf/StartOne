@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/UI_Scene/LoginMainView.unity
+- path: Assets/Scenes/UI_Scene/FightScene.unity
   isLoaded: 1
   isActive: 1
