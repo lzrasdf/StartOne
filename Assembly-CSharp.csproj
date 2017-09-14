@@ -54,15 +54,17 @@
      <Compile Include="Assets\camera.cs" />
      <Compile Include="Assets\player.cs" />
      <Compile Include="Assets\Scripts\Camera\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Common\Event.cs" />
      <Compile Include="Assets\Scripts\Common\GlobalConst.cs" />
      <Compile Include="Assets\Scripts\Common\GlobalDirection.cs" />
      <Compile Include="Assets\Scripts\common_Button.cs" />
+     <Compile Include="Assets\Scripts\Fighting\FighttingView.cs" />
      <Compile Include="Assets\Scripts\LoginMainView.cs" />
      <Compile Include="Assets\Scripts\math\utilMath.cs" />
      <Compile Include="Assets\Scripts\RoleController\Action.cs" />
      <Compile Include="Assets\Scripts\RoleController\Move.cs" />
      <Compile Include="Assets\Scripts\ShopMainView.cs" />
-     <Compile Include="Assets\Scripts\sphere\sphere1.cs" />
+     <Compile Include="Assets\Scripts\UIComponent\JoyController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -84,6 +86,10 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BC0C6B60-1BD6-FE86-CDA1-6E18FDFDFA00}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

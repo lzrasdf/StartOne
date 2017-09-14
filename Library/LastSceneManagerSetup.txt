@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/UI_Scene/FightScene.unity
+- path: Assets/Standard Assets/CNControls/Examples/Scenes/Third Person Controller.unity
   isLoaded: 1
   isActive: 1

@@ -26,6 +26,16 @@ public class UIEventListener : MonoBehaviour, IPointerClickHandler, IPointerEnte
 	/// </summary>  
 	public event UIEventProxy OnMouseExit;  
 
+/*	/// <summary>  
+	/// 鼠标拖拽事件  
+	/// </summary>  
+	public event UIEventProxy OnMouseDrag;  
+
+	/// <summary>  
+	/// 鼠标??事件  
+	/// </summary>  
+	public event UIEventProxy OnMouseDown;  */
+
 	public void OnPointerClick(PointerEventData eventData)  
 	{  
 		if (OnClick != null)  
@@ -43,4 +53,16 @@ public class UIEventListener : MonoBehaviour, IPointerClickHandler, IPointerEnte
 		if (OnMouseExit != null)  
 			OnMouseExit(this.gameObject);  
 	}  
+/*
+	public void OnDrag(PointerEventData eventData)
+	{
+		if (OnMouseDrag != null)  
+			OnMouseDrag(this.gameObject); 
+		 Debug.Log("drag"); 
+	}
+	public void OnPointerDown(PointerEventData eventData)
+	{
+		if (OnMouseDown != null)  
+			OnMouseDown(this.gameObject); 
+	}*/
 }  

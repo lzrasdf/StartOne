@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
-		
+		 Debug.Log( (int)Days.Tue );
 	}
 	
 	// Update is called once per frame
